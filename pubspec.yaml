@@ -1,0 +1,31 @@
+name: flutter_webdesign
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  carousel_slider: ^4.0.0
+  cupertino_icons: ^1.0.2
+  firebase_auth: ^3.0.2
+  firebase_auth_web: ^3.0.1
+  firebase_core: ^1.5.0
+  flutter:
+    sdk: flutter
+  google_sign_in: ^5.0.7
+  shared_preferences: ^2.0.7
+  url_launcher: ^6.0.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  assets:
+    - assets/
+
+  uses-material-design: true
