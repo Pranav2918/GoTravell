@@ -45,8 +45,8 @@ class AuthService {
     });
   }
 
-  //Google Signin
-  static Future<User?> signInWithGoogle({required BuildContext context}) async {
+  //Google Signin Mobile
+  static Future<User?> signInWithGoogleMobile({required BuildContext context}) async {
     FirebaseAuth auth = FirebaseAuth.instance;
     User? user;
 

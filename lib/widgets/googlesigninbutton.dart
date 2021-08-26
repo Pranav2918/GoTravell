@@ -24,8 +24,8 @@ class _GSigninState extends State<GSignin> {
     return InkWell(
       onTap: () {
         ResponsiveWidget.isSmallScreen(context)
-            ? AuthService.signInWithGoogle(context: context)
-            : signInWithGoogle(); //AuthServices.signInWithGoogle for mobile and other one is for web
+            ? AuthService.signInWithGoogleMobile(context: context)
+            : signInWithGoogle();
       },
       onHover: (val) {
         setState(() {
@@ -56,12 +56,13 @@ class _GSigninState extends State<GSignin> {
     );
   }
 
+  //Google Signin for Web
   signInWithGoogle() async {
     // Initialize Firebase
     await Firebase.initializeApp();
     User? user;
 
-    // The `GoogleAuthProvider` can only be used while running on the web
+    // The 'GoogleAuthProvider' can only be used while running on the web
     GoogleAuthProvider authProvider = GoogleAuthProvider();
 
     try {

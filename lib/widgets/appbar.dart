@@ -169,7 +169,7 @@ class NavMobile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 80,
+      height: 50,
       width: MediaQuery.of(context).size.width,
       child: AppBar(
         actions: <Widget>[
