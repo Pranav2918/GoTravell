@@ -2,7 +2,6 @@
 
 - It is responsive design of a web landing page.
 - Contains firebase authentication for login and sign up.
-- Have simple JS alert within app.
 
 ### Mobile Screenshots
 
